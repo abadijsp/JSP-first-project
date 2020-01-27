@@ -32,5 +32,13 @@ payload]]></ee:set-payload>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="7e882a1c-9a77-494d-816c-b12262a1fced" message="'test project'"/>
 		<set-payload value="#['changed will happen when i add set payload']" doc:name="Set Payload" doc:id="84ce31d5-cb72-458f-b25f-f5c7c3b11972" />
+		<ee:transform doc:name="yes i have a problem with abidella" doc:id="33537c02-e693-44fe-8f51-b1fb8d9be971" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 	</flow>
 </mule>
