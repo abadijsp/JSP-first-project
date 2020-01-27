@@ -22,6 +22,7 @@ payload
 		</ee:transform>
 		<logger level="INFO" doc:name="bdallA" doc:id="796ff2f2-2a0a-430a-a536-1e4019205eed" message="mr me me"/>
 		<logger level="INFO" doc:name="Logger" doc:id="719f9f62-a3d9-4cc1-8d96-2904399d0266" message="#[payload]"/>
+		<logger level="INFO" doc:name="Step Logger" doc:id="47177dfb-ee43-4e84-97d5-bc9055974c9e" message='#["hello world"]'/>
 		<ee:transform doc:name="Transform Message" doc:id="f0faf679-2d35-423c-baf3-4ad7522db1c6" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
