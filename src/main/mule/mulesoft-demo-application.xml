@@ -10,6 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="mulesoft-demo-applicationFlow" doc:id="e659476d-d119-4e32-b934-efd16072929a" >
 		<http:listener doc:name="Listener" doc:id="0042212a-b250-428e-9b3b-f17a32fd4f0d" config-ref="HTTP_Listener_config" path="/welcome"/>
+		<logger level="INFO" doc:name="Logger" doc:id="6eeb76b3-beba-40fa-a896-9d1bab8448d8" message="This is my DEMO"/>
 		<set-payload value="#['cloudHub deployment using mvn plugin']" doc:name="Set Payload" doc:id="1d0d2cd2-4381-4ac0-913d-9e004582922b" />
 		<ee:transform doc:name="Transform Message" doc:id="83e0412d-3d04-4096-83ff-a21c225948f5" >
 			<ee:message >
