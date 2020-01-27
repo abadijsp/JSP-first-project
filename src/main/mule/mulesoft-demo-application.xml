@@ -43,5 +43,6 @@ payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="f7798b91-d9f5-45e9-bfab-9076df377a91" message="'the is the last change ade on this project'"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="6bc2fcd0-8777-4262-bbd0-a34f204b66ad" />
 	</flow>
 </mule>
