@@ -40,5 +40,6 @@ output application/json
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="f7798b91-d9f5-45e9-bfab-9076df377a91" message="'the is the last change ade on this project'"/>
 	</flow>
 </mule>
