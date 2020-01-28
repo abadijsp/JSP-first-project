@@ -21,8 +21,8 @@
 		<plugins>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-app-maven-plugin</artifactId>
-				<version>${mule.tools.version}</version>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
 				<cloudHubDeployment>
@@ -30,7 +30,6 @@
 				<username>abadi2121</username>
 				<password>Abe@0913</password>
 				<environment>Sandbox</environment>
-				<url>https://anypoint.mulesoft.com/</url>
 				<applicationName>muleSoft-demo-application</applicationName>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
