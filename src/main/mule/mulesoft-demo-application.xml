@@ -11,7 +11,6 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="mulesoft-demo-applicationFlow" doc:id="e659476d-d119-4e32-b934-efd16072929a" >
 		<http:listener doc:name="Listener" doc:id="0042212a-b250-428e-9b3b-f17a32fd4f0d" config-ref="HTTP_Listener_config" path="/welcome"/>
 		<logger level="INFO" doc:name="Logger" doc:id="6eeb76b3-beba-40fa-a896-9d1bab8448d8" message="This is my DEMO"/>
-		<set-payload value="#['cloudHub deployment using mvn plugin']" doc:name="Set Payload" doc:id="1d0d2cd2-4381-4ac0-913d-9e004582922b" />
 		<ee:transform doc:name="Transform Message" doc:id="83e0412d-3d04-4096-83ff-a21c225948f5" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
@@ -21,7 +20,9 @@ payload
 ]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
+		<logger level="INFO" doc:name="display the actual message from flow -event" doc:id="936a270a-028b-4a73-848e-bcb64452712b" message="#[payload]"/>
 		<logger level="INFO" doc:name="bdallA" doc:id="796ff2f2-2a0a-430a-a536-1e4019205eed" message="mr me me"/>
+		<set-payload value="#['cloudHub deployment using mvn plugin']" doc:name="Set Payload" doc:id="1d0d2cd2-4381-4ac0-913d-9e004582922b" />
 		<logger level="INFO" doc:name="Logger" doc:id="719f9f62-a3d9-4cc1-8d96-2904399d0266" message="#[payload]"/>
 		<logger level="INFO" doc:name="Step Logger" doc:id="47177dfb-ee43-4e84-97d5-bc9055974c9e" message='#["hello world"]'/>
 		<ee:transform doc:name="Transform Message" doc:id="f0faf679-2d35-423c-baf3-4ad7522db1c6" >
