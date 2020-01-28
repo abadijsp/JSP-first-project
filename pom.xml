@@ -30,7 +30,7 @@
 				<username>abadi2121</username>
 				<password>Abe@0913</password>
 				<environment>Sandbox</environment>
-				<url>C:\Users\abadi\Documents\GitHub\JSP-first-project</url>
+				<url>https://anypoint.mulesoft.com/</url>
 				<applicationName>muleSoft-demo-application</applicationName>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
